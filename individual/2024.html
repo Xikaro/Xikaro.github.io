@@ -4,9 +4,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="search" type="application/opensearchdescription+xml" title="webref.ru" href="/sites/ref/search.xml">
-	<title>Нормальное позиционирование 2 | Самостоятельная | WebReference</title>
+	<title>Очистка float 2 | Самостоятельная | WebReference</title>
 	<meta charset="utf-8" />
-	<meta name="description" content="Создайте ве-страницу, как показано на рис. 1. Рис. 1" />
+	<meta name="description"
+		content="Создайте веб-страницу, как показано на рис. 1. Для обозначения рубля используйте символ ₽. Рис. 1." />
 	<style media="screen">
 		@import url("https://webref.ru/sites/all/themes/v4/css/vendor/bulma.min.css?qt3nw0");
 		@import url("https://webref.ru/sites/all/themes/v4/css/style.min.css?qt3nw0");
@@ -26,8 +27,8 @@
 							<span itemprop="title"><a href="/individual"
 									class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Самостоятельная</a></span> <span
 								class="easy-breadcrumb_segment-separator"></span>
-							<span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Нормальное
-								позиционирование 2</span> </div>
+							<span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Очистка float
+								2</span> </div>
 					</div>
 				</div>
 			</section>
@@ -49,15 +50,15 @@
 						</div>
 					</section>
 					<div class="title">
-						<h1>Нормальное позиционирование 2</h1>
+						<h1>Очистка float 2</h1>
 					</div>
 					<div id="example-form"></div>
 					<section class="region region-content">
 						<div id="system-main" class="block">
 							<div class="block_content">
-								<p>Создайте ве-страницу, как показано на рис.&nbsp;1.</p>
-								<p class="fig"><img src="/assets/images/individual/static-2.png" alt="" width="601" height="483"></p>
-								<p class="figsign">Рис. 1</p>
+								<p>Создайте веб-страницу, как показано на рис. 1. Для обозначения рубля используйте символ ₽.</p>
+								<p class="fig"><img src="/assets/images/float/clear-individual.png" alt="" width="735" height="400"></p>
+								<p class="figsign">Рис. 1.</p>
 								<w-individual>
 									<div class="field field-name-field-individual-result field-type-text-long field-label-hidden">
 										<div class="field-items">
@@ -67,59 +68,65 @@
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Блок&lt;/title&gt;
+&lt;title&gt;Заказ&lt;/title&gt;
 &lt;style&gt;
-body {
-background: #f7f9fa;
-}
 section {
-width: 300px;
-font-family: Arial Helvetica, sans-serif;
-color: #777;
-background: #fff;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+border: 1px solid #e9eaec;
+border-radius: 4px;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
-.content {
-text-align: center;
-padding: 10px 20px 20px;
-}
-.content h2 {
-color: #333;
-margin-top: 0;
+h2, h3 {
+text-transform: uppercase;
 font-weight: normal;
+color: #3b4550;
+margin: 0;
 }
-.content h2::after {
-content: '';
-display: block;
-width: 30px;
-margin: 10px auto;
-border-bottom: 5px dotted #fd644a;
+h2 {
+font-size: 18px;
+border-bottom: 1px solid #e9eaec;
+padding-bottom: 10px;
 }
-.content p {
-font-size: 0.8em;
+h3 { font-size: 14px; }
+.row {
+overflow: hidden;
+border-bottom: 1px solid #e9eaec;
+padding: 10px 0;
+color: #848994;
+font-size: 13px;
 }
-.content button {
-background: #fd644a;
-color: #fff;
+.row:last-child {
 border: none;
-padding: 10px 20px;
-margin-top: 10px;
-border-radius: 20px;
+padding-bottom: 0;
 }
+.product { float: left; }
+.price, .total { float: right; }
+.total { color: #50a2de; font-size: 18px; }
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;section&gt;
-&lt;img src=&quot;image/landscape.jpg&quot; alt=&quot;&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;h2&gt;Туристический цикл&lt;/h2&gt;
-&lt;p&gt;Большая часть территории однородно вызывает закрытый аквапарк.&lt;/p&gt;
-&lt;button&gt;Подробнее&lt;/button&gt;
+&lt;h2&gt;Ваш заказ&lt;/h2&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;product&quot;&gt;&lt;h3&gt;Продукт&lt;/h3&gt;&lt;/div&gt;
+&lt;div class=&quot;price&quot;&gt;&lt;h3&gt;Цена&lt;/h3&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;product&quot;&gt;Футболка&lt;/div&gt;
+&lt;div class=&quot;price&quot;&gt;599 ₽&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;product&quot;&gt;Шорты&lt;/div&gt;
+&lt;div class=&quot;price&quot;&gt;299 ₽&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;product&quot;&gt;&lt;h3&gt;Итого&lt;/h3&gt;&lt;/div&gt;
+&lt;div class=&quot;total&quot;&gt;898 ₽&lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-												</w-example>
+													</w-example>
 											</div>
 										</div>
 									</div>

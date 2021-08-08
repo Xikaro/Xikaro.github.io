@@ -4,9 +4,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="search" type="application/opensearchdescription+xml" title="webref.ru" href="/sites/ref/search.xml">
-	<title>Нормальное позиционирование 2 | Самостоятельная | WebReference</title>
+	<title>Относительное позиционирование | Самостоятельная | WebReference</title>
 	<meta charset="utf-8" />
-	<meta name="description" content="Создайте ве-страницу, как показано на рис. 1. Рис. 1" />
+	<meta name="description"
+		content="Создайте веб-страницу, показанную на рис. 1. Линии по бокам заголовка должны тянуться, независимо от размера окна браузера. Рис. 1" />
 	<style media="screen">
 		@import url("https://webref.ru/sites/all/themes/v4/css/vendor/bulma.min.css?qt3nw0");
 		@import url("https://webref.ru/sites/all/themes/v4/css/style.min.css?qt3nw0");
@@ -26,8 +27,8 @@
 							<span itemprop="title"><a href="/individual"
 									class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Самостоятельная</a></span> <span
 								class="easy-breadcrumb_segment-separator"></span>
-							<span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Нормальное
-								позиционирование 2</span> </div>
+							<span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Относительное
+								позиционирование</span> </div>
 					</div>
 				</div>
 			</section>
@@ -49,14 +50,15 @@
 						</div>
 					</section>
 					<div class="title">
-						<h1>Нормальное позиционирование 2</h1>
+						<h1>Относительное позиционирование</h1>
 					</div>
 					<div id="example-form"></div>
 					<section class="region region-content">
 						<div id="system-main" class="block">
 							<div class="block_content">
-								<p>Создайте ве-страницу, как показано на рис.&nbsp;1.</p>
-								<p class="fig"><img src="/assets/images/individual/static-2.png" alt="" width="601" height="483"></p>
+								<p>Создайте веб-страницу, показанную на рис. 1. Линии по бокам заголовка должны тянуться, независимо от
+									размера окна браузера.</p>
+								<p class="fig"><img src="/assets/images/individual/relative.png" alt="" width="603" height="282"></p>
 								<p class="figsign">Рис. 1</p>
 								<w-individual>
 									<div class="field field-name-field-individual-result field-type-text-long field-label-hidden">
@@ -67,59 +69,50 @@
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Блок&lt;/title&gt;
+&lt;title&gt;Блок с заголовком&lt;/title&gt;
 &lt;style&gt;
-body {
-background: #f7f9fa;
-}
-section {
-width: 300px;
-font-family: Arial Helvetica, sans-serif;
-color: #777;
-background: #fff;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.content {
-text-align: center;
-padding: 10px 20px 20px;
-}
-.content h2 {
-color: #333;
-margin-top: 0;
-font-weight: normal;
-}
-.content h2::after {
-content: '';
-display: block;
-width: 30px;
-margin: 10px auto;
-border-bottom: 5px dotted #fd644a;
-}
-.content p {
-font-size: 0.8em;
-}
-.content button {
-background: #fd644a;
+.block {
+background: #795548;
+padding: 20px;
 color: #fff;
-border: none;
-padding: 10px 20px;
-margin-top: 10px;
-border-radius: 20px;
+font-family: Arial, sans-serif;
+}
+.block h2 {
+color: #feea3b;
+overflow: hidden;
+font-weight: normal;
+margin-top: 0;
+text-align: center;
+}
+.block h2::before, .block h2::after {
+content: '';
+background: #feea3b;
+display: inline-block;
+height: 1px;
+position: relative;
+vertical-align: middle;
+width: 50%;
+}
+.block h2::before {
+right: 10px;
+margin-left: -50%;
+}
+.block h2::after {
+left: 10px;
+margin-right: -50%;
 }
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;section&gt;
-&lt;img src=&quot;image/landscape.jpg&quot; alt=&quot;&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;h2&gt;Туристический цикл&lt;/h2&gt;
-&lt;p&gt;Большая часть территории однородно вызывает закрытый аквапарк.&lt;/p&gt;
-&lt;button&gt;Подробнее&lt;/button&gt;
-&lt;/div&gt;
+&lt;section class=&quot;block&quot;&gt;
+&lt;h2&gt;Апперцепция&lt;/h2&gt;
+&lt;p&gt;Гештальт, как бы это ни казалось парадоксальным,
+понимает культурный комплекс, к тому же этот вопрос
+касается чего-то слишком общего.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-												</w-example>
+													</w-example>
 											</div>
 										</div>
 									</div>
